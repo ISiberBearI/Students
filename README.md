@@ -12,8 +12,8 @@
 Необходимо будет создать БД и, возможно, пользователя.
 В сервере должна быть включена возможность коннекта по SQL авторизации.
 Также должен быть включен TCP порт 1433/1434.
+[MS SQL Express](https://www.microsoft.com/ru-RU/download/details.aspx?id=55994)
 [Management Studio](https://docs.microsoft.com/ru-ru/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
-[MS SQL Express](https://www.microsoft.com/ru-RU/download/details.aspx)
 
 # Настройка приложения
 
