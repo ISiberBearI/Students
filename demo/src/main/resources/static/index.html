@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="jQuery.js"></script>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script type="text/javascript" src="bootstrap.js"></script>
+    <script type="text/javascript" src="Script.js"></script>
+    <meta charset="UTF-8">
+    <title>Работа со студентами</title>
+</head>
+<body>
+<div class="offset-lg-1 col-lg-10">
+    <h3><i>РАБОТА СО СТУДЕНТАМИ</i></h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="row">
+                <label class="col-sm-4">Группа: </label>
+                <select class="col-sm-4" id="groupSelect"></select>
+                <button class="col-sm-4" id="groupDelete">Удалить</button>
+            </div>
+            <p><i>СПИСОК СТУДЕНТОВ</i></p>
+            <table>
+                <thead>
+                <th style="width: 33.33%"><u>Фамилия</u></th>
+                    <th style="width: 33.33%"><u>Имя</u></th>
+                    <th style="width: 8.33%"><u>Оценка</u></th>
+                    <th style="width: 8.33%"></th>
+                </thead>
+                <tbody id="tableBody">
+
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-6">
+            <p><i>ДОБАВИТЬ ГРУППУ</i></p>
+            <div class="row">
+                <label class="col-sm-4">Название группы:</label>
+                <input class="col-sm-4" id="newGroupName" maxlength="10" type="text">
+                <button class="col-sm-4" id="newGroupButton">Добавить</button>
+            </div>
+            <p><i>ИЗМЕНИТЬ ТЕКУЩУЮ ГРУППУ</i></p>
+            <div class="row">
+                <label class="col-sm-4">Название группы:</label>
+                <input class="col-sm-4" id="currentGroupName" maxlength="10" type="text">
+                <button class="col-sm-4" id="currentGroupButton">Изменить</button>
+            </div>
+            <p><i>ДОБАВИТЬ СТУДЕНТА В ТЕКУЩУЮ ГРУППУ</i></p>
+            <div>
+
+                <div class="row">
+                    <label class="col-sm-4">Фамилия:</label>
+                    <input class="col-sm-8" id="newStudentLastName" maxlength="20" type="text">
+                </div>
+                <div class="row">
+                    <label class="col-sm-4">Имя:</label>
+                    <input class="col-sm-8" maxlength="15" id="newStudentFirstName" type="text">
+                </div>
+                <div class="row">
+                    <label class="col-sm-4">Оценка:</label>
+                    <select class="col-sm-8" id="newStudentRating">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button class="col-sm-12" id="newStudentButton">Добавить</button>
+                </div>
+
+            </div>
+            <p><i>ОТРЕДАКТИРОВАТЬ ВЫБРАННОГО СТУДЕНТА</i></p>
+            <div>
+
+                <div class="row">
+                    <label class="col-sm-4">Фамилия:</label>
+                    <input class="col-sm-8" id="currentStudentLastName" maxlength="20" type="text">
+                </div>
+                <div class="row">
+                    <label class="col-sm-4">Имя:</label>
+                    <input class="col-sm-8" id="currentStudentFirstName" maxlength="15" type="text">
+                </div>
+                <div class="row">
+                    <label class="col-sm-4">Оценка:</label>
+                    <select class="col-sm-8" id="currentStudentRating">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button class="col-sm-12" id="currentStudentButton">Сохранить</button>
+                </div>
+                </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
